@@ -1,17 +1,17 @@
 # Runpod AI Studio
 
-Eine moderne, elegante Weboberfläche im Obsidian-Dark-Design zur Steuerung von **Runpod GPU-Instanzen** und zur direkten Interaktion mit **Large Language Models (LLMs)**.
+Eine moderne, elegante Chat-Oberfläche im Obsidian-Dark-Design zur direkten Interaktion mit **Large Language Models (LLMs)** auf Runpod – inklusive praktischer Notfall-Stopp-Funktion für aktive Instanzen zur Kostenkontrolle.
 
-Entwickelt für nahtloses Token-Streaming, transparente Kostenkontrolle und flexible Modellnutzung (sowohl für Instruct- als auch für rohe Base-Modelle via Ollama/GGUF).
+Entwickelt für nahtloses Token-Streaming, flexible Modellnutzung (Chat-Modus sowie Completion-Modus für GGUF/Ollama) und schnelles Beenden laufender Pods.
 
 ---
 
 ## 🌟 Highlights & Funktionen
 
 - **Echtzeit-Streaming:** Schnelle Antworten mit Token-Streaming, Abbruchfunktion (`Stoppen`) und Neu-Generierung.
-- **Runpod-Instanzverwaltung:**
+- **Kostenkontrolle (Notfall-Stopp):**
   - Aktive Pods und Serverless-Endpunkte direkt in der Seitenleiste einsehen.
-  - **Notfall-Stopp:** Alle laufenden Instanzen mit einem Klick beenden, um unbemerkte GPU-Kosten zu vermeiden.
+  - Laufende Instanzen mit einem Klick stoppen, um unbemerkte GPU-Kosten zu vermeiden.
 - **Dualer Modus (Chat & Completion):**
   - **Chat-Modus:** Ideal für Instruct-/Chat-Modelle mit dynamischem System-Prompt.
   - **Completion-Modus (Base-Modelle):** Sendet rohen Text ohne Chat-Templates direkt an GGUF-/Base-Modelle (z. B. für Storytelling oder Code-Vervollständigung).
