@@ -65,10 +65,10 @@ function normalizePodStatus(desiredStatus, currentStatus) {
   return statusStr;
 }
 
-// Helper for RunPod REST v2 requests
+// Helper for Runpod REST v2 requests
 async function executeRestV2(endpoint, method = 'GET', body = null, apiKey = '') {
   if (!apiKey) {
-    throw new Error('API key is required for RunPod REST v2 requests');
+    throw new Error('API key is required for Runpod REST v2 requests');
   }
 
   const url = `https://api.runpod.io/v2${endpoint}`;
@@ -101,7 +101,7 @@ async function executeRestV2(endpoint, method = 'GET', body = null, apiKey = '')
       detailMsg = text;
     }
 
-    throw new Error(detailMsg || `RunPod REST v2 Error ${response.status}: ${response.statusText}`);
+    throw new Error(detailMsg || `Runpod REST v2 Error ${response.status}: ${response.statusText}`);
   }
 
   try {
@@ -111,10 +111,10 @@ async function executeRestV2(endpoint, method = 'GET', body = null, apiKey = '')
   }
 }
 
-// Helper for RunPod GraphQL requests
+// Helper for Runpod GraphQL requests
 async function executeGraphQL(query, variables = {}, apiKey = '') {
   if (!apiKey) {
-    throw new Error('API key is required for RunPod GraphQL requests');
+    throw new Error('API key is required for Runpod GraphQL requests');
   }
 
   const response = await fetch(`${RUNPOD_GRAPHQL_URL}?api_key=${encodeURIComponent(apiKey)}`, {
@@ -127,12 +127,12 @@ async function executeGraphQL(query, variables = {}, apiKey = '') {
   });
 
   if (!response.ok) {
-    throw new Error(`RunPod GraphQL HTTP Error: ${response.status} ${response.statusText}`);
+    throw new Error(`Runpod GraphQL HTTP Error: ${response.status} ${response.statusText}`);
   }
 
   const result = await response.json();
   if (result.errors && result.errors.length > 0) {
-    throw new Error(result.errors[0].message || 'RunPod GraphQL query returned errors');
+    throw new Error(result.errors[0].message || 'Runpod GraphQL query returned errors');
   }
 
   return result.data;
@@ -896,7 +896,7 @@ app.use((req, res, next) => {
 
 
 app.listen(PORT, '0.0.0.0', () => {
-  console.log(`[${new Date().toISOString()}] RunPod AI Studio server listening on http://localhost:${PORT}`);
+  console.log(`[${new Date().toISOString()}] Runpod AI Studio server listening on http://localhost:${PORT}`);
 });
 
 

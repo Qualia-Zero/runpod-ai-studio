@@ -23,7 +23,7 @@ const DEFAULT_SETTINGS = {
 const WELCOME_MESSAGE = {
   id: 'msg_1',
   role: 'assistant',
-  content: `Willkommen bei **RunPod AI Studio**! 🚀\n\nTrage deinen RunPod-API-Schlüssel in den Einstellungen ein, um deine aktiven RunPod-Modelle und Server automatisch zu verbinden.`,
+  content: `Willkommen bei **Runpod AI Studio**! 🚀\n\nTrage deinen Runpod-API-Schlüssel in den Einstellungen ein, um deine aktiven Runpod-Modelle und Server automatisch zu verbinden.`,
   timestamp: Date.now()
 };
 

@@ -1,7 +1,7 @@
 {
   "name": "runpod-ai-studio",
   "version": "1.0.0",
-  "description": "Elegante Web-Oberfläche und Steuerung für RunPod GPU-Instanzen und LLMs",
+  "description": "Elegante Web-Oberfläche und Steuerung für Runpod GPU-Instanzen und LLMs",
   "author": "Qualia-Zero",
   "license": "MIT",
   "type": "module",

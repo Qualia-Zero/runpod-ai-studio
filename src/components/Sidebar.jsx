@@ -336,7 +336,7 @@ export const Sidebar = ({
           type="button"
           onClick={handleStopAllClick}
           disabled={isToggling}
-          title="Stoppt alle derzeit aktiven RunPod-Instanzen auf deinem Account"
+          title="Stoppt alle derzeit aktiven Runpod-Instanzen auf deinem Account"
           style={{
             width: '100%',
             display: 'flex',

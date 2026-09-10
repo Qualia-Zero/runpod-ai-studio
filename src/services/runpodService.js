@@ -1,12 +1,12 @@
 /**
- * RunPod Service - API integration for RunPod Pod management and Serverless completions.
+ * Runpod Service - API integration for Runpod Pod management and Serverless completions.
  * Communicates with local Express API server (/api/runpod/...) with client-side fallback simulation.
  */
 
 const API_BASE_URL = '/api/runpod';
 
 /**
- * Fetch list of pods from Express backend / RunPod API.
+ * Fetch list of pods from Express backend / Runpod API.
  * @param {string} [apiKey] 
  * @returns {Promise<{ pods: Array<Object>, apiKeyProvided: boolean, simulated: boolean }>}
  */
@@ -33,7 +33,7 @@ export async function fetchPods(apiKey = '') {
       simulated: !!data.simulated
     };
   } catch (error) {
-    console.warn('[RunPod Service] fetchPods failed (Server offline):', error.message);
+    console.warn('[Runpod Service] fetchPods failed (Server offline):', error.message);
     return {
       pods: [],
       apiKeyProvided: !!apiKey,
@@ -46,7 +46,7 @@ export async function fetchPods(apiKey = '') {
 
 
 /**
- * Stop a RunPod Pod instance.
+ * Stop a Runpod Pod instance.
  * @param {string} podId 
  * @param {string} apiKey 
  * @returns {Promise<{ success: boolean, status: string }>}
@@ -75,13 +75,13 @@ export async function stopPod(podId, apiKey = '') {
     const data = await response.json();
     return { success: true, status: data.status || 'STOPPING' };
   } catch (error) {
-    console.warn('[RunPod Service] stopPod request failed, falling back to simulated STOPPING:', error.message);
+    console.warn('[Runpod Service] stopPod request failed, falling back to simulated STOPPING:', error.message);
     return { success: true, status: 'STOPPING' };
   }
 }
 
 /**
- * Stop all active RunPod Pod instances on account.
+ * Stop all active Runpod Pod instances on account.
  * @param {string} apiKey 
  * @returns {Promise<{ success: boolean, status: string, stoppedCount?: number }>}
  */
@@ -107,7 +107,7 @@ export async function stopAllPods(apiKey = '') {
     const data = await response.json();
     return { success: true, status: data.status || 'STOPPED', stoppedCount: data.stoppedCount || 0 };
   } catch (error) {
-    console.warn('[RunPod Service] stopAllPods request failed, falling back to simulated STOPPING:', error.message);
+    console.warn('[Runpod Service] stopAllPods request failed, falling back to simulated STOPPING:', error.message);
     return { success: true, status: 'STOPPING', stoppedCount: 0 };
   }
 }
@@ -202,7 +202,7 @@ export function streamCompletion(params, onChunk, onError, onComplete) {
       if (err.name === 'AbortError' || isAborted) {
         return;
       }
-      console.warn('[RunPod Service] Express streaming endpoint failed:', err.message);
+      console.warn('[Runpod Service] Express streaming endpoint failed:', err.message);
       if (onError && typeof onError === 'function') {
         onError(err);
       }

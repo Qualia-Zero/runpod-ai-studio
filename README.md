@@ -1,6 +1,6 @@
-# RunPod AI Studio
+# Runpod AI Studio
 
-Eine moderne, elegante Weboberfläche im Obsidian-Dark-Design zur Steuerung von **RunPod GPU-Instanzen** und zur direkten Interaktion mit **Large Language Models (LLMs)**.
+Eine moderne, elegante Weboberfläche im Obsidian-Dark-Design zur Steuerung von **Runpod GPU-Instanzen** und zur direkten Interaktion mit **Large Language Models (LLMs)**.
 
 Entwickelt für nahtloses Token-Streaming, transparente Kostenkontrolle und flexible Modellnutzung (sowohl für Instruct- als auch für rohe Base-Modelle via Ollama/GGUF).
 
@@ -9,14 +9,14 @@ Entwickelt für nahtloses Token-Streaming, transparente Kostenkontrolle und flex
 ## 🌟 Highlights & Funktionen
 
 - **Echtzeit-Streaming:** Schnelle Antworten mit Token-Streaming, Abbruchfunktion (`Stoppen`) und Neu-Generierung.
-- **RunPod-Instanzverwaltung:**
+- **Runpod-Instanzverwaltung:**
   - Aktive Pods und Serverless-Endpunkte direkt in der Seitenleiste einsehen.
   - **Notfall-Stopp:** Alle laufenden Instanzen mit einem Klick beenden, um unbemerkte GPU-Kosten zu vermeiden.
 - **Dualer Modus (Chat & Completion):**
   - **Chat-Modus:** Ideal für Instruct-/Chat-Modelle mit dynamischem System-Prompt.
   - **Completion-Modus (Base-Modelle):** Sendet rohen Text ohne Chat-Templates direkt an GGUF-/Base-Modelle (z. B. für Storytelling oder Code-Vervollständigung).
 - **100 % Sicher & Privat:**
-  - Der RunPod-API-Schlüssel wird **ausschließlich im lokalen Browser-Speicher (`localStorage`)** gespeichert.
+  - Der Runpod-API-Schlüssel wird **ausschließlich im lokalen Browser-Speicher (`localStorage`)** gespeichert.
   - Keine Speicherung auf Server-Festplatten, keine Weitergabe an Dritte.
 - **1-Klick-Start:** Vorkonfigurierte Starter-Skripte für Linux (`./start.sh`) und Windows (`start.bat`).
 
@@ -59,7 +59,7 @@ Die Anwendung ist anschließend unter **`http://localhost:5173`** erreichbar.
 ## ⚙️ Konfiguration
 
 1. Öffnen Sie die Studio-Einstellungen (Zahnrad-Symbol oben rechts).
-2. Tragen Sie Ihren persönlichen **RunPod-API-Schlüssel** ein (`rpd_...` oder `rpa_...`).
+2. Tragen Sie Ihren persönlichen **Runpod-API-Schlüssel** ein (`rpd_...` oder `rpa_...`).
 3. Passen Sie die Parameter nach Belieben an:
    - **Temperatur:** Kreativität steuern (0.0 = Präzise/Code, 0.7 = Ausgewogen, 1.5+ = Kreativ)
    - **Ausgabe-Tokens:** Maximale Antwortlänge (64 bis 8192 Tokens)
@@ -70,7 +70,7 @@ Die Anwendung ist anschließend unter **`http://localhost:5173`** erreichbar.
 ## 🛠️ Verwendete Technologien
 
 - **Frontend:** React 19, Vite, Lucide Icons, React Markdown (GitHub Flavored Markdown)
-- **Backend / Proxy:** Node.js, Express, RunPod REST v2 & GraphQL API
+- **Backend / Proxy:** Node.js, Express, Runpod REST v2 & GraphQL API
 - **Design:** Modernes Glassmorphism / Obsidian Dark Theme
 
 ---

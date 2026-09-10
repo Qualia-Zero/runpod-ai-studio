@@ -122,7 +122,7 @@ export const Header = ({
                 letterSpacing: '-0.02em',
                 color: '#ffffff'
               }}>
-                RunPod AI Studio
+                Runpod AI Studio
               </span>
               <span style={{
                 fontSize: '10px',
@@ -218,7 +218,7 @@ export const Header = ({
                 textTransform: 'uppercase',
                 letterSpacing: '0.05em'
               }}>
-                Verfügbare RunPod-Modelle
+                Verfügbare Runpod-Modelle
               </div>
 
               {!isServerConnected ? (
@@ -230,7 +230,7 @@ export const Header = ({
               ) : pods.length === 0 ? (
                 <div style={{ padding: '14px 12px', textAlign: 'center' }}>
                   <p style={{ fontSize: '13px', color: '#f87171', marginBottom: '12px', lineHeight: 1.45 }}>
-                    Bitte trage deinen RunPod-API-Schlüssel in den Einstellungen ein, um deine Modelle zu verbinden.
+                    Bitte trage deinen Runpod-API-Schlüssel in den Einstellungen ein, um deine Modelle zu verbinden.
                   </p>
                   <button
                     type="button"

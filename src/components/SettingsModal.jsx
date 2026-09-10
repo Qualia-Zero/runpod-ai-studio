@@ -153,7 +153,7 @@ export const SettingsModal = ({
                 Studio-Einstellungen
               </h2>
               <p style={{ fontSize: '12.5px', color: 'var(--text-muted, #6b7280)', margin: 0 }}>
-                Modellparameter und RunPod-API-Konfiguration
+                Modellparameter und Runpod-API-Konfiguration
               </p>
             </div>
           </div>
@@ -298,7 +298,7 @@ export const SettingsModal = ({
               marginBottom: '8px'
             }}>
               <Key size={15} color="#a78bfa" />
-              RunPod-API-Schlüssel
+              Runpod-API-Schlüssel
             </label>
 
             <div style={{ position: 'relative' }}>
@@ -341,7 +341,7 @@ export const SettingsModal = ({
                 </span>
               ) : isValidApiKey ? (
                 <span style={{ color: '#10b981', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                  <Check size={14} /> Gültiges RunPod-API-Schlüssel-Format
+                  <Check size={14} /> Gültiges Runpod-API-Schlüssel-Format
                 </span>
               ) : (
                 <span style={{ color: '#ef4444', display: 'flex', alignItems: 'center', gap: '4px' }}>
