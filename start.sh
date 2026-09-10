@@ -29,10 +29,11 @@ if curl -s --max-time 1 http://localhost:5173/ >/dev/null 2>&1; then
 fi
 
 # 4. Open browser automatically after 1s
+echo -e "\033[1;36m[Runpod AI Studio]\033[0m Weboberfläche: \033[4;34mhttp://localhost:5173\033[0m"
 (sleep 1 && ( \
-  (setsid google-chrome http://localhost:5173 >/dev/null 2>&1 &) 2>/dev/null || \
   (setsid xdg-open http://localhost:5173 >/dev/null 2>&1 &) 2>/dev/null || \
-  (open http://localhost:5173 >/dev/null 2>&1 &) 2>/dev/null \
+  (open http://localhost:5173 >/dev/null 2>&1 &) 2>/dev/null || \
+  (setsid google-chrome http://localhost:5173 >/dev/null 2>&1 &) 2>/dev/null \
 )) &
 
 # 5. Start node server

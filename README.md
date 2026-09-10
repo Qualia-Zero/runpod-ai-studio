@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="public/icon.png" width="128" alt="Runpod AI Studio Icon" style="border-radius: 24px;">
+</p>
+
 # Runpod AI Studio
 
 Eine moderne, elegante Chat-Oberfläche im Obsidian-Dark-Design zur direkten Interaktion mit **Large Language Models (LLMs)** auf Runpod – inklusive praktischer Notfall-Stopp-Funktion für aktive Instanzen zur Kostenkontrolle.
