@@ -30,7 +30,7 @@ Entwickelt für nahtloses Token-Streaming, flexible Modellnutzung (Chat-Modus so
 
 ### 1. Repository klonen
 ```bash
-git clone git@github.com:Qualia-Zero/runpod-ai-studio.git
+git clone git@github.com:qualia-zero/runpod-ai-studio.git
 cd runpod-ai-studio
 ```
 

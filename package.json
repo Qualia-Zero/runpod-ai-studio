@@ -2,7 +2,7 @@
   "name": "runpod-ai-studio",
   "version": "1.0.0",
   "description": "Elegante Chat-Oberfläche für Runpod-LLMs mit Notfall-Stopp für aktive Instanzen",
-  "author": "Qualia-Zero",
+  "author": "qualia-zero",
   "license": "MIT",
   "type": "module",
   "scripts": {
